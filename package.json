@@ -1,0 +1,23 @@
+{
+  "name": "lambda-resize-avatar",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timezoneio/lambda-resize-avatar.git"
+  },
+  "author": "Dan Farrelly <daniel.j.farrelly@gmail.com> (http://danfarrelly.nyc)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/timezoneio/lambda-resize-avatar/issues"
+  },
+  "homepage": "https://github.com/timezoneio/lambda-resize-avatar#readme",
+  "dependencies": {
+    "async": "^1.4.2",
+    "gm": "^1.19.0"
+  }
+}
