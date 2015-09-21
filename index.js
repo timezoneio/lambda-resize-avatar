@@ -64,9 +64,11 @@ exports.handler = function(event, context) {
         Bucket: dstBucket,
         Key: dstKey,
         Body: data,
-        ContentType: contentType
+        ContentType: contentType,
+        ACL: 'public-read'
       }, next);
     }
+    // TODO - Delete original image
   ], function (err) {
     if (err) {
       console.error(
