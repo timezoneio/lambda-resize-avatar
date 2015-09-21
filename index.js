@@ -15,9 +15,9 @@ exports.handler = function(event, context) {
   // Remove spaces or non ASCII characers
   var srcKey = decodeURIComponent(event.Records[0].s3.object.key.replace(/\+/g, ' '));
 
-  // NOTE - We're currently overwriting the original image
+  // NOTE - We're currently putting it right in the original bucket
   var dstBucket = srcBucket;
-  var dstKey = srcKey;
+  var dstKey = srcKey.replace('_full', '');
 
   var typeMatch = srcKey.match(/\.([^.]*)$/);
   if (!typeMatch) {
